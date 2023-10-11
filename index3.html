@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ILaughedMemes - CONTATO</title>
+    <style>
+        a{ color: Crimson; }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background: url('imagem/backgroundsvascodesfocado.png') no-repeat fixed center center; background-size: cover;" style="font-family: 'Arial', sans-serif;">
+
+    
+    <div style="background-color: black; height: 50px;">
+        <table align="center" cellpadding="0" cellspacing="15">
+          <tr>
+            <td> <a href="index1.html"> HOME </a></td>
+            <td style="padding-left: 210px; padding-right: 200px;"> <a href="index2.html"> SOBRE </a></td>
+            <td> <a href="index3.html"> CONTATO </a></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <br>
+
+    <h2 align="center"> Entre em Contato Conosco </h2>
+    <table width="800" align="center" bgcolor="Crimson">
+        <tr><td>
+            <form action="enviar.php" method="post" name="cadastro">
+                <fieldset>
+                <table>
+                    <legend>Informe seus dados:</legend>
+                        <tr>
+                            <td><label> Nome: </label></td>
+                            <td><input type="text" id="Nome" name="Nome" size="70" maxlength="50" placeholder="Digite seu Nome" required></td>
+                        </tr>
+                        <tr>
+                            <td><label> Email: </label></td>
+                            <td><input type="email" name="mail" id="mail" size="50" maxlength="40" placeholder="Digite seu E-mail" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <table>
+                        <legend> Responda: </legend>
+                            <tr>
+                                <td><label> Você é do Sexo?</label></td>
+                                <td><input type="radio" name="sexo" id="Masculino" required>
+                            <label> Masculino </label>
+                                <input type="radio" name="sexo" id="Feminino" required>
+                            <label> Feminino </label></td>
+                            </tr>
+                            <tr> 
+                                <td><label> Você nasceu em:</label></td>
+                                <td><input type="date" id="data_nasc" name="data_nasc"
+                            min="1924-01-01" max="2014-01-01" required></td>
+                            </tr>
+                            <tr>
+                                <td><label> Você costuma compartilhar memes online?</label></td>
+                                <td><input type="radio" name="CompartilharMeme" id="Sim1" required>
+                                    <label> Sim </label>
+                                        <input type="radio" name="CompartilharMeme" id="Nao1" required>
+                                    <label> Não </label></td>
+                            </tr>
+                            <tr>
+                                <td><label>Com que frequência você consome memes?</label></td>
+                                <td><input type="radio" name="Frequencia" id="Diariamente" required>
+                                    <label> Diariamente</label>
+                                    <input type="radio" name="Frequencia" id="Semanalmente" required>
+                                    <label> Semanalmente</label>
+                                    <input type="radio" name="Frequencia" id="Mensalmente" required>
+                                    <label> Mensalmente</label>
+                                    <input type="radio" name="Frequencia" id="Raramente" required>
+                                    <Label> Raramente</Label></td>
+                            </tr>
+                            <tr>
+                                <td><label> Quais são seus tipos de memes favoritos?</label></td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" id="MemesImagemTexto" name="MemesImagemTexto" value="MemesImagemTexto">Memes de imagem com texto
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="checkbox" id="MemesGIFs" name="MemesGIFs" value="MemesGIFs"> GIFs
+                                    </label>
+                                    <br>
+                                    
+                                    <label>
+                                        <input type="checkbox" id="Memesvideoscurtos" name="Memesvideoscurtos" value="Memesvideoscurtos"> Vídeos curtos
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="checkbox" id="MemesOutros" name="MemesOutros" value="MemesOutros"> Outros
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label> Você usa memes para se comunicar com outras pessoas? </label></td>
+                                <td><input type="radio" name="ComunicarMeme" id="Sempre" required>
+                                    <label> Sempre </label>
+                                        <input type="radio" name="ComunicarMeme" id="Muitasvezes" required>
+                                    <label> Muitas vezes </label>
+                                        <input type="radio" name="ComunicarMeme" id="Vezenquando" required>
+                                    <label> De vez em quando </label>
+                                        <input type="radio" name="ComunicarMeme" id="Poucasvezes" required>
+                                    <label> Poucas vezes </label>
+                                        <input type="radio" name="ComunicarMeme" id="NaoFaco" required>
+                                    <label> Não Faço isso </label></td>
+                            </tr>
+                            <tr>
+                                <td><label> Você Gostaria de adicionar algum meme em nosso site?</label></td>
+                                <td><input type="radio" name="GostaMeme" id="Sim2" required>
+                                    <label> Sim </label>
+                                        <input type="radio" name="GostaMeme" id="Nao2" required>
+                                    <label> Não </label></td>
+                            </tr>
+                            <tr>
+                                <td><label> Se Sim, Anexe Aqui:</label></td>
+                                <td><input type="file" name="foto" id="foto"></td>
+                            </tr>
+                        </tr>
+                        <tr>
+                        <td><label> Nos dê sua Opinião:</label></td>
+                        <td><textarea name="coment" id="coment" cols="50" rows="5" maxlength="400"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="enviar" name="enviar" value="ENVIAR DADOS">
+                        <input type="reset" id="limpar" name="limpar" value="LIMPAR"></td>
+                    </tr>
+                    </table>
+                </fieldset>
+        </td></tr>
+    </table>
+    <br>
+    <footer>
+        <div style="background-color: black; height: 50px;">
+            <p>&copy;<br><font color="Crimson"> 10/2023 - ILaughedMemes. Todos os direitos reservados.</font></p>
+        </div>
+      </footer>
+</body>
+</html>
